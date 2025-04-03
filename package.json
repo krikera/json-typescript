@@ -1,0 +1,53 @@
+{
+  "name": "json-to-ts-cvr",
+  "version": "1.0.0",
+  "description": "CLI tool to convert JSON structures into TypeScript interfaces with no extra work",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "json-to-ts-cvr": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "json",
+    "typescript",
+    "cli",
+    "converter",
+    "interfaces"
+  ],
+  "author": "krikera",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krikera/json-typescript.git"
+  },
+  "bugs": {
+    "url": "https://github.com/krikera/json-typescript/issues"
+  },
+  "homepage": "https://github.com/krikera/json-typescript#readme",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "commander": "^11.1.0",
+    "pluralize": "^8.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.4",
+    "@types/pluralize": "^0.0.33",
+    "@types/jest": "^29.5.10",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.3.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

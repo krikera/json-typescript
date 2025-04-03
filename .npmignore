@@ -1,0 +1,28 @@
+# Source files
+src/
+tsconfig.json
+jest.config.js
+
+# Git and GitHub files
+.git/
+.gitignore
+.github/
+
+# Test files
+*.test.ts
+*.spec.ts
+sample-data.json
+custom-data.json
+test-cli.sh
+
+# IDE files
+.idea/
+.vscode/
+
+# Logs
+*.log
+logs/
+
+# Miscellaneous
+.DS_Store
+Thumbs.db 
