@@ -2,7 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/json-to-ts-cvr.svg)](https://www.npmjs.com/package/json-to-ts-cvr)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![CI](https://github.com/krikera/json-typescript/actions/workflows/ci.yml/badge.svg)](https://github.com/krikera/json-typescript/actions/workflows/ci.yml)
+[![CI](https://github.com/krikera/json-to-ts-cvr/actions/workflows/ci.yml/badge.svg)](https://github.com/krikera/json-to-ts-cvr/actions/workflows/ci.yml)
 
 > A CLI tool to convert JSON structures into TypeScript interfaces or classes
 
