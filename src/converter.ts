@@ -88,11 +88,11 @@ function determineType(
 
   switch (typeof value) {
     case 'string':
-      return options.unionNull ? 'string' : 'string';
+      return 'string';
     case 'number':
-      return options.unionNull ? 'number' : 'number';
+      return 'number';
     case 'boolean':
-      return options.unionNull ? 'boolean' : 'boolean';
+      return 'boolean';
     case 'object':
       if (Array.isArray(value)) {
         if (value.length === 0) {
@@ -232,8 +232,8 @@ function generateTypeScriptCode(
 
     // Add properties
     for (const prop of interfaceData.properties) {
-      const nullUnion = options.unionNull && prop.type === 'null' ? 'null' : '';
-      const typeWithNull = nullUnion ? `${prop.type} | ${nullUnion}` : prop.type;
+      // Don't add null union for properties that are already null type
+      const typeWithNull = prop.type;
       const optionalIndicator = prop.isOptional ? '?' : '';
 
       code += `  ${prop.name}${optionalIndicator}: ${typeWithNull};\n`;
